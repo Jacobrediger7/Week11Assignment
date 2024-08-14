@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .tic-tac-toe-grid td {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 2rem;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 id="turnIndicator">X's Turn</h1>
+        
+        <table class="tic-tac-toe-grid mx-auto mt-3">
+            <tr>
+                <td data-cell></td>
+                <td data-cell></td>
+                <td data-cell></td>
+            </tr>
+            <tr>
+                <td data-cell></td>
+                <td data-cell></td>
+                <td data-cell></td>
+            </tr>
+            <tr>
+                <td data-cell></td>
+                <td data-cell></td>
+                <td data-cell></td>
+            </tr>
+        </table>
+        
+        <button id="restartBtn" class="btn btn-primary mt-4">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
