@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe Game</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Tic-Tac-Toe Game</title> <!-- Sets the title of the page, shown in the browser tab -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> <!-- Links to Bootstrap CSS for styling -->
     <style>
-        .tic-tac-toe-grid td {
-            width: 100px;
-            height: 100px;
-            text-align: center;
-            font-size: 2rem;
-            cursor: pointer;
-            border: 1px solid #000;
+        /* Styles for the Tic-Tac-Toe grid */
+          .tic-tac-toe-grid td {
+            width: 100px; /* Width of each cell */
+            height: 100px; /* Height of each cell */
+            text-align: center; /* Centers text within the cell */
+            font-size: 2rem; /* Sets the font size of the text */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            border: 1px solid #000; /* Adds a black border to each cell */
         }
     </style>
 </head>
 <body>
-    <div class="container text-center mt-5">
-        <h1 id="turnIndicator">X's Turn</h1>
+    <div class="container text-center mt-5"> <!-- Centers the content and adds margin-top using Bootstrap -->
+        <h1 id="turnIndicator">X's Turn</h1> <!-- Displays whose turn it is, starting with X -->
         
-        <table class="tic-tac-toe-grid mx-auto mt-3">
+        <table class="tic-tac-toe-grid mx-auto mt-3"> <!-- Creates the Tic-Tac-Toe grid with centered table -->
             <tr>
-                <td data-cell></td>
+                <td data-cell></td> <!-- Each td represents a cell in the grid -->
                 <td data-cell></td>
                 <td data-cell></td>
             </tr>
@@ -38,9 +39,12 @@
             </tr>
         </table>
         
-        <button id="restartBtn" class="btn btn-primary mt-4">Restart Game</button>
+        <button id="restartBtn" class="btn btn-primary mt-4">Restart Game</button> <!-- Button to restart the game -->
     </div>
 
+    <!-- Load jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Then load your custom script -->
     <script src="script.js"></script>
 </body>
 </html>
